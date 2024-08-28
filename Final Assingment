@@ -1,0 +1,62 @@
+DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tana Mongeau - W (Official Music Video)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2em;
+        }
+
+        iframe {
+            width: 100%;
+            height: 315px;
+            border: none;
+        }
+
+        .animate {
+            transition: transform 1s;
+        }
+
+        .animate:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Enjoy Tana Mongeau - W (Official Music Video)!</h1>
+        <iframe class="animate" src="https://www.youtube.com/watch?v=02B7U9DAnz8" allowfullscreen></iframe>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animation effect using JavaScript
+            const iframe = document.querySelector('iframe');
+            let scale = 1;
+            setInterval(() => {
+                scale = scale === 1 ? 1.05 : 1;
+                iframe.style.transform = `scale(${scale})`;
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
